@@ -16,7 +16,7 @@ def user():
     return render_template("user.html")
 
 
-@user_bp.route('/user_home',  methods=['POST', 'GET'])
+@user_bp.route('/user_home', methods=['GET', 'POST'])
 def user_home():
     msg = ''
     print("hi")

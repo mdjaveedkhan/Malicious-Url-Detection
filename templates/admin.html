@@ -1,7 +1,8 @@
 {% include "header.html" %}
 <div class="content">
                 <center>
-                <form action="http://localhost:5000/admin_home" method="post">
+                <form action="{{ url_for('admin_home') }}" method="post">
+
 
                 <h1>Admin Login</h1><br>
                 <ol style="list-style: none">

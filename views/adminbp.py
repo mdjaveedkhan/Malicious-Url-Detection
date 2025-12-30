@@ -12,7 +12,7 @@ def admin():
     return render_template("admin.html")
 
 
-@admin_bp.route('/admin_home',  methods=['POST', 'GET'])
+@admin_bp.route('/admin_home', methods=['GET', 'POST'])
 def admin_home():
     msg = ''
     if request.form['user'] == 'admin' and request.form['pwd'] == 'admin':

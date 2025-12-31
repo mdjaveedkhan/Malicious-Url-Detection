@@ -22,7 +22,7 @@ def admin_home():
     return render_template('admin.html', msg=msg)
 
 
-@admin_bp.route('/admin_upload',  methods=['POST', 'GET'])
+@admin_bp.route('/admin_upload', methods=['GET', 'POST'])
 def admin_upload():
     msg = ''
     if request.method == 'POST':
